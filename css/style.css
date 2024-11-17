@@ -1,0 +1,381 @@
+/* Google Fonts */
+body{
+    background-color: #231F20; /* Black Background */
+    color: #EAEAEA; /* White Text */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h5, p{
+    color: #AD974F; /* White Text */
+}
+
+h1{
+    color: #FFD700; /* White Text */
+}
+
+h2{
+    color: #FFD700; /* White Text */
+}
+
+
+.dark-gold {color: #8E793E}
+.light-gold {color: #AD974F}
+.intellectual-grey {color: #231F20}
+.light-grey {color: #EAEAEA}
+
+/* Navbar Background */
+.bg-black {
+    background-color: #EAEAEA; /* Black Background */
+}
+
+/* Navbar Links */
+.navbar-dark .navbar-nav .nav-link {
+    color: #AD974F; /* Light Gold for Links */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #FFD700; /* Bright Gold on Hover */
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #8E793E; /* Primary Gold for Active Links */
+}
+
+/* Logo */
+.navbar-brand {
+    color: #FFD700; /* Bright Gold for Logo Text */
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand .logo {
+    height: 100px; /* Adjust logo size */
+    width: auto;
+}
+
+/* Mobile Menu Button */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28%255, 215, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Gold icon */
+}
+
+/* For Mobile */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #231F20; /* Black Navbar */
+    border-bottom: 2px solid #D4AF37; /* Gold Border */
+    padding: 1rem 0;
+}
+
+.navbar .nav-link {
+    color: #F5CC74; /* Light Gold Text */
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #FFD700; /* Bright Gold on Hover */
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #D4AF37; /* Gold Button */
+    color: #000000; /* Black Text */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #C5A46D; /* Muted Gold on Hover */
+    color: #FFFFFF; /* White Text */
+}
+
+/* Tabs */
+.nav-tabs .nav-link {
+    background-color: #231F20; /* Black Tab Background */
+    color: #F5CC74; /* Light Gold Text */
+    border: 1px solid #D4AF37; /* Gold Border */
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #D4AF37; /* Gold Active Tab */
+    color: #231F20; /* Black Text */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 50;
+    width: 95%;
+    height: 65%;
+    background-image: url('../images/istockphoto-511061090-612x612.jpg'); /* URL gambar */
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px 30px 30px 30px; /* Membuat sudut bawah rounded */
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    z-index: 1;
+}
+
+.hero .btn {
+    font-weight: 500;
+    border-color: white;
+    color: white;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.hero .btn:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* Layanan Section */
+.services-section {
+    background-color: #231F20;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.services-section h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #333;
+}
+
+.service-box {
+    background: white;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.service-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.service-box h5 {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.service-box p {
+    color: #666;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+/* Gallery Section */
+#gallery {
+    background-color: #FFFFFF; /* Black Background */
+    color: #F5CC74; /* Light Gold Text */
+}
+
+#gallery h2 {
+    color: #D4AF37; /* Gold Title */
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#gallery p {
+    color: #C5A46D; /* Muted Gold for Subtext */
+}
+
+#gallery img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#gallery img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0px 5px 15px rgba(212, 175, 55, 0.5); /* Gold shadow */
+}
+
+/* One Stop Service Section */
+#one-stop-service {
+    background-color: #231F20; /* Black Background */
+    color: #FFFFFF; /* White Text */
+}
+
+#one-stop-service h2 {
+    color: #D4AF37; /* Gold Title */
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#one-stop-service p {
+    color: #C5A46D; /* Muted Gold for Subtext */
+}
+
+/* Card Styling */
+.card {
+    background-color: #231F20; /* Black Card Background */
+    border: 8px solid #D4AF37; /* Gold Border */
+    transition: transform 0.3s ease;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.card-title {
+    color: #FFD700; /* Bright Gold for Titles */
+    font-weight: bold;
+}
+
+.card-text {
+    color: #C5A46D; /* Muted Gold for Text */
+}
+
+/* Registered With Section */
+#registered-with {
+    background-color: #000000; /* Black Background */
+    color: #FFFFFF; /* White Text */
+}
+
+#registered-with h2 {
+    color: #D4AF37; /* Gold Title */
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#registered-with p {
+    color: #C5A46D; /* Muted Gold for Subtext */
+}
+
+/* Logo Styling */
+#registered-with img {
+    max-height: 100px; /* Set max height for logos */
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+#registered-with img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0px 5px 15px rgba(212, 175, 55, 0.5); /* Gold shadow */
+    
+}
+
+/* Footer Section */
+#footer-section {
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+}
+
+#footer-section .text-gold {
+    color: #FFD700; /* Bright Gold */
+}
+
+#footer-section .text-muted {
+    color: #C5A46D; /* Muted Gold */
+}
+
+#footer-section .social-icons a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#footer-section .social-icons a:hover {
+    transform: scale(1.2); /* Zoom effect on hover */
+    color: #FFD700; /* Bright Gold */
+}
+
+#footer-section ul {
+    padding-left: 0; /* Remove default padding from list */
+}
+
+#footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+#footer-section ul li a:hover {
+    color: #FFD700; /* Bright Gold on hover */
+}
+
+/* Footer */
+.footer {
+    background-color: #231F20; /* Black Background */
+    color: #C5A46D; /* Muted Gold Text */
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 2px solid #D4AF37; /* Gold Border */
+}
+
+.footer a {
+    color: #FFD700; /* Bright Gold Links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #FFFFFF; /* White on Hover */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+/* Scroll Reveal Styling */
+.reveal {
+    opacity: 0;
+    transform: translateY(100px); /* Geser ke bawah */
+    transition: all 0.8s ease-out; /* Efek transisi */
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0); /* Kembali ke posisi semula */
+}
+
+.service-box a img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-box a img:hover {
+    transform: scale(1.05); /* Membesarkan sedikit gambar saat hover */
+}
